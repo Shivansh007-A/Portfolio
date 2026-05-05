@@ -1,0 +1,557 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #05070d;
+  color: #e5e7eb;
+
+  /* subtle grid background */
+  background-image:
+    linear-gradient(rgba(0,255,157,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,157,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ================= NAV ================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #9ca3af;
+
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.logo span {
+  color: #00ff9d;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff9d;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 100px 60px;
+}
+
+.highlight {
+  color: #00ff9d;
+  font-weight: 600;
+
+  background: rgba(0, 255, 157, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+
+  transition: 0.25s;
+}
+
+.highlight:hover {
+  background: rgba(0, 255, 157, 0.15);
+}
+
+.hero-desc {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #9ca3af;
+}
+
+/* ================= SECTION WRAPPER ================= */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  /* keeps content neatly inside card */
+  padding: 5px 10px;
+}
+
+/* 🔥 PERFECT LEFT + RIGHT ALIGNMENT */
+.about-content p {
+  margin: 0;
+  color: #9ca3af;
+  line-height: 1.8;
+
+  /* KEY FIX */
+  text-align: justify;
+
+  /* prevents weird stretching */
+  max-width: 100%;
+}
+
+/* ================= EXPERIENCE DESCRIPTION ALIGNMENT ================= */
+.info-card p {
+  margin: 0;
+  color: #9ca3af;
+  line-height: 1.8;
+
+  text-align: justify;
+
+  /* spacing between paragraphs */
+  margin-bottom: 14px;
+
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
+}
+
+/* remove extra space after last paragraph */
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================= EDUCATION CARD ================= */
+.education-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 10px 0;
+}
+
+/* ================= HEADER (LOGO + TITLE) ================= */
+.edu-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ================= LOGO BOX ================= */
+.edu-logo {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: rgba(0, 255, 157, 0.08);
+  border: 1px solid rgba(0, 255, 157, 0.2);
+
+  flex-shrink: 0;
+}
+
+/* ICON INSIDE LOGO */
+.edu-logo i {
+  font-size: 20px;
+  color: #00ff9d;
+}
+
+/* ================= TITLE ================= */
+.edu-header h3 {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+/* ================= DURATION ================= */
+.edu-duration {
+  margin: 4px 0 0 0;
+  color: #9ca3af;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ================= DETAILS (QUALIFICATION / GRADE / CGPA) ================= */
+.education-card p {
+  margin: 0;
+  color: #9ca3af;
+  line-height: 1.7;
+
+  text-align: left;
+  padding-left: 6px;
+}
+
+/* LABELS (B TAG) */
+.education-card b {
+  color: #e5e7eb;
+}
+
+/* ================= SECTION CARD (ONLY POP EFFECT) ================= */
+.section-card {
+  background: rgba(15,23,42,0.6);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,255,157,0.1);
+  transition: 0.3s;
+}
+
+/* POP UP ONLY (NO GLOW) */
+.section-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ================= INNER CARDS (GLOW ONLY HERE) ================= */
+.info-card,
+.project-card,
+.achievement-card {
+  background: #0f172a;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  /* base state */
+  box-shadow: 0 0 0 rgba(0, 255, 157, 0);
+  border: 1px solid transparent;
+}
+
+/* GLOW ON HOVER ONLY */
+.info-card:hover,
+.project-card:hover,
+.achievement-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.25);
+  border: 1px solid rgba(0, 255, 157, 0.3);
+}
+
+/* ================= EXPERIENCE META ================= */
+.exp-meta {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+  color: #9ca3af;
+  flex-wrap: wrap;
+}
+
+/* ================= PROJECT BUTTON ================= */
+.project-btn-top {
+  float: right;
+  color: #00ff9d;
+  border: 1px solid #00ff9d;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-btn-top:hover {
+  background: rgba(0,255,157,0.1);
+}
+
+/* ================= TAGS ================= */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  background: #111827;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* ================= SKILL BLOCK (INNER CARD) ================= */
+.skill-block {
+  background: #0f172a;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  transition: 0.3s;
+
+  border: 1px solid transparent;
+}
+
+/* POP + GLOW ON CARD HOVER */
+.skill-block:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.25);
+  border: 1px solid rgba(0, 255, 157, 0.2);
+}
+
+/* ================= SKILL TAGS ================= */
+.skills span {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 6px;
+
+  border-radius: 50px;
+
+  background: #111827;
+  color: #9ca3af;
+
+  transition: 0.25s;
+
+  border: 1px solid #2a2f3a;
+}
+
+/* ================= NEON TEXT ONLY (NO BORDER GLOW) ================= */
+.skills span:hover {
+  color: #00ff9d;
+
+  /* NO border glow */
+  border-color: transparent;
+
+  /* subtle text glow only */
+  text-shadow: 0 0 8px rgba(0, 255, 157, 0.6);
+}
+
+
+/* ================= PROJECT PARAGRAPH SPACING ================= */
+.project-card p {
+  margin: 10px 0;
+  color: #9ca3af;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* bullet-style spacing consistency */
+.project-card p::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+}
+
+
+/* ================= EXPERIENCE HEADER ================= */
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* ================= LOGO CIRCLE ================= */
+.exp-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #00ff9d;
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  flex-shrink: 0;
+}
+
+/* image inside circle */
+.exp-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= HOVER NEON GLOW ================= */
+.exp-logo:hover {
+  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.exp-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 255, 157, 0.08);
+  border: 2px solid #00ff9d;
+  color: #00ff9d;
+
+  font-size: 20px;
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  transition: 0.3s;
+}
+
+.exp-logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+}
+
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* ================= NEON ICON CIRCLE ================= */
+.exp-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 255, 157, 0.08);
+  border: 2px solid #00ff9d;
+  color: #00ff9d;
+
+  font-size: 20px;
+
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  transition: 0.3s;
+}
+
+.exp-logo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+}
+
+
+/* ================= ACHIEVEMENTS CARD ================= */
+
+/* TIMELINE LINE */
+.timeline {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 255, 157, 0.15);
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* ICON (REPLACES DOT) */
+.timeline-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+
+  width: 26px;
+  height: 26px;
+
+  background: #0f172a;
+  border: 1px solid rgba(0, 255, 157, 0.2);
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-icon i {
+  font-size: 13px;
+  color: #00ff9d;
+}
+
+/* CARD */
+.achievement-card {
+  margin-left: 40px;
+  background: #0f172a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+}
+
+/* ================= CONTACT ================= */
+
+/* ================= CONTACT CARD ================= */
+#contact .section-card {
+  text-align: center;
+}
+
+/* ================= SOCIAL LINKS ================= */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
+
+/* icon base style */
+.contact-links a {
+  color: #9ca3af;
+  transition: 0.3s;
+}
+
+/* hover neon effect */
+.contact-links a:hover {
+  color: #00ff9d;
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.6);
+  transform: translateY(-3px);
+}
+
+/* ================= THANK YOU NOTE ================= */
+.thank-note {
+  margin-top: 20px;
+  color: #9ca3af;
+  line-height: 1.7;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.95rem;
+}
+
+/* ================= CARD HOVER (MATCH OTHER SECTIONS) ================= */
+#contact .section-card {
+  transition: 0.3s;
+}
+
+#contact .section-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+}
+
+/* ================= SMOOTH BEHAVIOR ================= */
+html {
+  scroll-behavior: smooth;
+}
