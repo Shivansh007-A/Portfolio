@@ -7,14 +7,14 @@
 
 /* ================= BODY ================= */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Cambria, "Times New Roman", serif;
   background: #05070d;
   color: #e5e7eb;
 
-  /* subtle grid background */
+  /* subtle saffron grid background */
   background-image:
-    linear-gradient(rgba(0,255,157,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,255,157,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255, 153, 51, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 153, 51, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 .logo span {
-  color: #00ff9d;
+  color: #ff9933;
 }
 
 nav ul {
@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #00ff9d;
+  color: #ff9933;
 }
 
 /* ================= HERO ================= */
@@ -61,10 +61,10 @@ nav a:hover {
 }
 
 .highlight {
-  color: #00ff9d;
+  color: #ff9933;
   font-weight: 600;
 
-  background: rgba(0, 255, 157, 0.08);
+  background: rgba(255, 153, 51, 0.08);
   padding: 2px 6px;
   border-radius: 4px;
 
@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 .highlight:hover {
-  background: rgba(0, 255, 157, 0.15);
+  background: rgba(255, 153, 51, 0.15);
 }
 
 .hero-desc {
@@ -158,8 +158,8 @@ nav a:hover {
 
   border-radius: 8px;
 
-  background: rgba(0, 255, 157, 0.08);
-  border: 1px solid rgba(0, 255, 157, 0.2);
+  background: rgba(255, 153, 51, 0.08);
+  border: 1px solid rgba(255, 153, 51, 0.2);
 
   flex-shrink: 0;
 }
@@ -167,7 +167,7 @@ nav a:hover {
 /* ICON INSIDE LOGO */
 .edu-logo i {
   font-size: 20px;
-  color: #00ff9d;
+  color: #ff9933;
 }
 
 /* ================= TITLE ================= */
@@ -207,7 +207,7 @@ nav a:hover {
   background: rgba(15,23,42,0.6);
   padding: 30px;
   border-radius: 15px;
-  border: 1px solid rgba(0,255,157,0.1);
+  border: 1px solid rgba(255, 153, 51, 0.1);
   transition: 0.3s;
 }
 
@@ -227,7 +227,7 @@ nav a:hover {
   transition: 0.3s;
 
   /* base state */
-  box-shadow: 0 0 0 rgba(0, 255, 157, 0);
+  box-shadow: 0 0 0 rgba(255, 153, 51, 0);
   border: 1px solid transparent;
 }
 
@@ -237,8 +237,8 @@ nav a:hover {
 .achievement-card:hover {
   transform: translateY(-6px);
 
-  box-shadow: 0 0 15px rgba(0, 255, 157, 0.25);
-  border: 1px solid rgba(0, 255, 157, 0.3);
+  box-shadow: 0 0 15px rgba(255, 153, 51, 0.25);
+  border: 1px solid rgba(255, 153, 51, 0.3);
 }
 
 /* ================= EXPERIENCE META ================= */
@@ -253,8 +253,8 @@ nav a:hover {
 /* ================= PROJECT BUTTON ================= */
 .project-btn-top {
   float: right;
-  color: #00ff9d;
-  border: 1px solid #00ff9d;
+  color: #ff9933;
+  border: 1px solid #ff9933;
   padding: 5px 10px;
   border-radius: 6px;
   text-decoration: none;
@@ -262,7 +262,7 @@ nav a:hover {
 }
 
 .project-btn-top:hover {
-  background: rgba(0,255,157,0.1);
+  background: rgba(255, 153, 51, 0.1);
 }
 
 /* ================= TAGS ================= */
@@ -296,8 +296,8 @@ nav a:hover {
 /* POP + GLOW ON CARD HOVER */
 .skill-block:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 15px rgba(0, 255, 157, 0.25);
-  border: 1px solid rgba(0, 255, 157, 0.2);
+  box-shadow: 0 0 15px rgba(255, 153, 51, 0.25);
+  border: 1px solid rgba(255, 153, 51, 0.2);
 }
 
 /* ================= SKILL TAGS ================= */
@@ -318,13 +318,13 @@ nav a:hover {
 
 /* ================= NEON TEXT ONLY (NO BORDER GLOW) ================= */
 .skills span:hover {
-  color: #00ff9d;
+  color: #ff9933;
 
   /* NO border glow */
   border-color: transparent;
 
   /* subtle text glow only */
-  text-shadow: 0 0 8px rgba(0, 255, 157, 0.6);
+  text-shadow: 0 0 8px rgba(255, 153, 51, 0.6);
 }
 
 
@@ -358,8 +358,8 @@ nav a:hover {
   height: 55px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #00ff9d;
-  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  border: 2px solid #ff9933;
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.6);
   flex-shrink: 0;
 }
 
@@ -372,7 +372,7 @@ nav a:hover {
 
 /* ================= HOVER NEON GLOW ================= */
 .exp-logo:hover {
-  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+  box-shadow: 0 0 18px rgba(255, 153, 51, 0.9);
   transform: scale(1.05);
   transition: 0.3s;
 }
@@ -392,18 +392,18 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 255, 157, 0.08);
-  border: 2px solid #00ff9d;
-  color: #00ff9d;
+  background: rgba(255, 153, 51, 0.08);
+  border: 2px solid #ff9933;
+  color: #ff9933;
 
   font-size: 20px;
-  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.6);
   transition: 0.3s;
 }
 
 .exp-logo:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+  box-shadow: 0 0 18px rgba(255, 153, 51, 0.9);
 }
 
 
@@ -423,19 +423,19 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 255, 157, 0.08);
-  border: 2px solid #00ff9d;
-  color: #00ff9d;
+  background: rgba(255, 153, 51, 0.08);
+  border: 2px solid #ff9933;
+  color: #ff9933;
 
   font-size: 20px;
 
-  box-shadow: 0 0 12px rgba(0, 255, 157, 0.6);
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.6);
   transition: 0.3s;
 }
 
 .exp-logo:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 18px rgba(0, 255, 157, 0.9);
+  box-shadow: 0 0 18px rgba(255, 153, 51, 0.9);
 }
 
 
@@ -455,7 +455,7 @@ nav a:hover {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: rgba(0, 255, 157, 0.15);
+  background: rgba(255, 153, 51, 0.15);
 }
 
 /* ITEM */
@@ -474,7 +474,7 @@ nav a:hover {
   height: 26px;
 
   background: #0f172a;
-  border: 1px solid rgba(0, 255, 157, 0.2);
+  border: 1px solid rgba(255, 153, 51, 0.2);
   border-radius: 6px;
 
   display: flex;
@@ -484,7 +484,7 @@ nav a:hover {
 
 .timeline-icon i {
   font-size: 13px;
-  color: #00ff9d;
+  color: #ff9933;
 }
 
 /* CARD */
@@ -498,7 +498,7 @@ nav a:hover {
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+  box-shadow: 0 0 15px rgba(255, 153, 51, 0.2);
 }
 
 /* ================= CONTACT ================= */
@@ -525,8 +525,8 @@ nav a:hover {
 
 /* hover neon effect */
 .contact-links a:hover {
-  color: #00ff9d;
-  text-shadow: 0 0 10px rgba(0, 255, 157, 0.6);
+  color: #ff9933;
+  text-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
   transform: translateY(-3px);
 }
 
@@ -548,10 +548,110 @@ nav a:hover {
 
 #contact .section-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+  box-shadow: 0 0 15px rgba(255, 153, 51, 0.2);
 }
 
 /* ================= SMOOTH BEHAVIOR ================= */
 html {
   scroll-behavior: smooth;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= SKILLS SECTION ================= */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+/* SKILL BUTTON */
+.skill-btn {
+  padding: 10px 18px;
+
+  background: #0f172a;
+  color: #e5e7eb;
+
+  border-radius: 30px;
+  border: 1px solid rgba(255, 153, 51, 0.15);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.skill-btn:hover {
+  transform: translateY(-4px);
+
+  color: #ff9933;
+
+  border-color: rgba(255, 153, 51, 0.5);
+
+  box-shadow:
+    0 0 10px rgba(255, 153, 51, 0.35),
+    0 0 20px rgba(255, 153, 51, 0.15);
+
+  background: rgba(255, 153, 51, 0.08);
+}
+
+/* ===== SKILLS TITLE ===== */
+
+.skills-title {
+  margin-top: 28px;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: #ff9933;
+
+  position: relative;
+
+  display: inline-block;
+}
+
+/* SMALL UNDERLINE EFFECT */
+.skills-title::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 60%;
+  height: 2px;
+
+  background: #ff9933;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
 }
